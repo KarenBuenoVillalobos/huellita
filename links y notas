@@ -1,0 +1,124 @@
+https://proyecto4patas.org/quiero-adoptar/
+
+Nosotros
+En Huellitas de Amor, creemos que cada vida animal cuenta. Nuestra misión es encontrar hogares amorosos para mascotas necesitadas y fomentar la adopción responsable. Aquí te contamos un poco más sobre nosotros:
+
+Nuestra Historia:
+Fundada en el año 2010, Huellitas de Amor nació con la pasión por los animales y el deseo de marcar la diferencia en sus vidas.
+Desde entonces, hemos trabajado incansablemente para rescatar, rehabilitar y encontrar familias para perros y gatos abandonados.
+Nuestro Equipo:
+Estamos formados por un equipo apasionado de voluntarios, veterinarios y amantes de los animales.
+Juntos, dedicamos nuestro tiempo y esfuerzo para asegurar que cada mascota encuentre un hogar lleno de amor y cuidado.
+Nuestro Compromiso:
+Promovemos la adopción como la mejor opción para darle una segunda oportunidad a los peludos.
+Realizamos eventos de adopción, campañas de esterilización y educación sobre tenencia responsable.
+¿Cómo Puedes Ayudar?:
+Adopta: Si estás buscando un compañero peludo, ¡considera adoptar!
+Apadrina: Contribuye al bienestar de un animal sin adoptarlo físicamente.
+Difunde: Comparte nuestras historias y anima a otros a adoptar.
+Contacto:
+Si deseas adoptar, colaborar o simplemente conocernos, ¡escríbenos! Estamos aquí para ti y para las mascotas.
+¡Únete a nuestra comunidad de amantes de los animales y ayúdanos a cambiar vidas una pata a la vez! 🐾
+
+TRUCO EFECTO ESPEJO
+/* backdrop-filter: blur(10px); */
+
+
+<!-- <div class="redes-sociales">
+            <ul>
+                <li><a href="https://www.twitter.com" target="_blank" title="Clic en Twitter">Twitter</a></li>
+                <li><a href="https://www.facebook.com" target="_blank" title="Clic en Facebook">Facebook</a></li>
+                <li><a href="https://www.whatsapp.com" target="_blank" title="Clic en WhatsApp">WhatsApp</a></li>
+            </ul>
+        </div> -->
+/* .redes-sociales li {
+    botones de redes
+    display: inline-block;
+    border-radius: 4px;
+    background: palevioletred;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 12), 0 1px 2px rgba(0, 0, 0, 12);
+    padding: 5px 12px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+.redes-sociales a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.redes-sociales a:hover {
+    color: black;
+}
+.redes-sociales li:hover {
+    background-color: pink;
+} */
+
+GRADIENTE CLARO A OSCURO
+/* border-image: fill 0 linear-gradient(#0001, #000); */
+
+REGISTRO/LOGIN
+<!-- <form action="" class="registro">
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" name="mail" id="mail" placeholder="ejemplo@gmail.com">
+            <label for="password">Contraseña:</label>
+            <input type="password" name="password" id="password" placeholder="Ingrese su contraseña">
+            <a href="">Iniciar sesión</a>
+            <a href="">Registrarse</a>
+        </form> -->
+        <!-- <h3>Queremos asegurarnos de que nuestras mascotas encuentren hogares seguros.<br>Por favor regístrate antes de
+            adoptar.</h3> -->
+<!-- <p>¡Únete a nuestra comunidad de amantes de los animales y ayúdanos a cambiar vidas una pata a la vez! 🐾</p> -->
+
+//-----------------------------------------------------
+
+/*let tasks = []; // crea un array vacio (listas)
+
+const form = document.querySelector(".form_task");
+const taskInput = document.querySelector("#taskInput");
+
+form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const txt_tarea = (taskInput.value.trim());
+
+    let erroresValidacion = false;
+    
+    if(txt_tarea.length < 5){
+        erroresValidacion = true;
+        const error = document.querySelector(".error")
+        error.textContent = "El texto de la tarea debe contener al menos 5 caractres";
+        //console.log(txt_tarea);
+
+        setTimeout(() => {
+            error.textContent = "";
+        }, 4000); // 4.000 milisegundos
+    } 
+
+    if(!erroresValidacion){
+       // console.log(txt_tarea);
+       const task = {
+            id: Date.now(), // nos da la cantidad de milisegundos desde 01/01/1970. Genero un numero unico
+            txt_tarea: txt_tarea,
+            completa: false,
+       };
+       
+       //console.log(task);
+
+       tasks.push(task); // Agrego la tarea a la lista de tareas
+       console.log(tasks);
+
+       //taskInput.value = ""; // limpiar el campo de la tarea (input)
+       form.reset();
+    }
+
+})*/
+
+-----------------------------------------------------
+comandos para abrir con el local storage en el git bash
+
+node -v
+npm -v
+
+npm install
+npm audit fix
+
+npm run dev
+------------------------------------------------------

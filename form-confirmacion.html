@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario enviado</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header id="header"></header>
+    <div class="confirm-content">
+        <h1>¡Gracias por enviar tu solicitud!</h1>
+        <h2>¡Estamos emocionados de que estés considerando brindarles un hogar lleno de amor y cuidado!</h2>
+        <h2>Se envió la siguiente información:</h2>
+    
+        <table>
+            <tr>
+                <th>Datos</th>
+                <th>Personales</th>
+            </tr>
+            <tr>
+                <td>Nombre:</td>
+                <td id="nombre"></td>
+            </tr>
+            <tr>
+                <td>Apellido:</td>
+                <td id="apellido"></td>
+            </tr>
+            <tr>
+                <td>E-mail:</td>
+                <td id="e-mail"></td>
+            </tr>
+            <tr>
+                <td>Teléfono:</td>
+                <td id="telefono"></td>
+            </tr>
+            <tr>
+                <td>Domicilio:</td>
+                <td id="domicilio"></td>
+            </tr>
+            <tr>
+                <td>Motivos de adopción:</td>
+                <td id="motivos"></td>
+            </tr>
+            <tr>
+                <td>Preguntas adicionales:</td>
+                <td id="preguntas"></td>
+            </tr>
+            <tr>
+                <td>Huellita/s elegida/s:</td>
+                <td id="mascota"></td>
+            </tr>
+            
+            <script language="javascript">
+                var args = location.search.substr(1).split('&');
+                var mascotasSeleccionadas = ""; // Definir la cadena de mascotas seleccionadas fuera del bucle
+                for (var i = 0; i < args.length; ++i) {
+                    var parts = args[i].split('=');
+                    if (parts != null && parts.length === 2) { // Verificar si hay dos partes
+                        var field = parts[0];
+                        var value = parts[1];
+                        if (value == null) {
+                            value = "null";
+                        } else {
+                            value = decodeURIComponent(value.replace(/\+/g, ' ')); // Utilizar decodeURIComponent para decodificar el valor
+                        }
+            
+                        document.getElementById(field).innerText = value;
+            
+                        // Concatenar el valor del checkbox solo si corresponde al campo "mascota"
+                        if (field === "mascota") {
+                            mascotasSeleccionadas += value + "<br>";
+                        }
+                    }
+                }
+                // Mostrar la cadena de mascotas seleccionadas en la tabla
+                document.getElementById("mascota").innerHTML = mascotasSeleccionadas;
+            </script>
+        </table>
+    
+        <h3>¡Gracias por ser parte de la familia Huellitas de Amor!</h3>
+        <a href="index.html">Volver al Inicio</a>
+    </div>
+
+    <footer id="footer"></footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

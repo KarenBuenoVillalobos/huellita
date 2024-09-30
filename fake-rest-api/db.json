@@ -1,0 +1,52 @@
+{
+  "tasks": [
+    {
+      "id": "90dd",
+      "txt_tarea": "Abi",
+      "edad": 9,
+      "tipoEdad": "Año/s",
+      "txt_descrip": "Es gris, blanca y mimosa.",
+      "completa": false
+    },
+    {
+      "id": "9f5a",
+      "txt_tarea": "Kayla",
+      "edad": 12,
+      "tipoEdad": "Año/s",
+      "txt_descrip": "Es gris, blanca y gruñona.",
+      "completa": false
+    },
+    {
+      "id": "4c0b",
+      "txt_tarea": "Amapola",
+      "edad": 6,
+      "tipoEdad": "Año/s",
+      "txt_descrip": "Es tricolor y mimosa.",
+      "completa": false
+    },
+    {
+      "id": "db0b",
+      "txt_tarea": "Callie",
+      "edad": 1,
+      "tipoEdad": "Año/s",
+      "txt_descrip": "Es gris, marrón y tranquila.",
+      "completa": false
+    },
+    {
+      "id": "a647",
+      "txt_tarea": "Kiwi",
+      "edad": 7,
+      "tipoEdad": "Mes/es",
+      "txt_descrip": "Es negra, blanca y tierna.",
+      "completa": false
+    },
+    {
+      "id": "9500",
+      "txt_tarea": "Nucita",
+      "edad": 7,
+      "tipoEdad": "Mes/es",
+      "txt_descrip": "Es blanca, marrón y adorable.",
+      "completa": false
+    }
+  ]
+}

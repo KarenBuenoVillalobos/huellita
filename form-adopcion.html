@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de adopción</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header id="header"></header>
+
+    <main class="main-form-adopcion">
+        <section class="form-adopcion"> <!-- FORMULARIO DE ADOPCION -->
+            <form action="form-confirmacion.html" method="get" id="formulario" class="formulario">
+                <h1>Formulario de adopción</h1>
+                <div class="group1">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre..">
+                </div>
+                <div class="group2">
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido..">
+                </div>
+                <div class="group3">
+                    <div class="group-mail">
+                        <label for="e-mail">E-mail: </label>
+                        <input type="email" name="e-mail" id="e-mail" placeholder="Ingrese su correo electrónico..">
+                    </div>
+                    <div class="group-tel">
+                        <label for="telefono">Teléfono: </label>
+                        <input type="number" name="telefono" id="telefono" placeholder="Ingrese su teléfono..">
+                    </div>
+                </div>
+                <label for="domicilio">Domicilio: </label>
+                <input type="text" name="domicilio" id="domicilio" placeholder="Ingrese su domicilio..">
+                <label for="motivos">Motivos de adopción: </label>
+                <textarea name="motivos" id="motivos" cols="50" rows="4" placeholder="Escriba los motivos de adopción.."></textarea>
+                <label for="preguntas">Preguntas adicionales: </label>
+                <textarea name="preguntas" id="preguntas" cols="50" rows="4" placeholder="Escriba sus dudas.."></textarea>
+                <label for="mascota" id="pregunta-peludito">¿Qué peludito está ganándose tu cariño para llevarlo a casa?</label>
+                <div id="opc-mascotas">
+                    <input type="checkbox" name="mascota" value="Burbuja" id="mascota">Burbuja
+                    <input type="checkbox" name="mascota" value="Toulouse" id="mascota">Toulouse
+                    <input type="checkbox" name="mascota" value="Mojo Jojo" id="mascota">Mojo Jojo
+                </div>
+                <div id="opc-mascotas">
+                    <input type="checkbox" name="mascota" value="Cosmo" id="cosmo">Cosmo
+                    <input type="checkbox" name="mascota" value="Bellota" id="bellota">Bellota
+                    <input type="checkbox" name="mascota" value="Bombon" id="bombon">Bombón
+                </div>
+                <input id="boton-enviar" type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

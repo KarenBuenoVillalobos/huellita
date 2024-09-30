@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Mascotas</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/abm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <main class="main">
+        <h1 class="main__title">Listado de Peluditos</h1>
+        <section class="section section-form">
+            <h2 class="section__title">Agregar Huellita</h2>
+            <form class="form_task">
+              <div class="form__container">
+                <label class="form__label" for="taskInput">Nombre: </label>
+                <input class="form__input" id="taskInput" type="text" />
+                <label class="form__label" for="taskInput">Edad: </label>
+                <input class="form__inputedad" id="taskInputEdad" type="number" />
+                <select name="select__tipoedad" class="form__selectedad" id="select__tipoedad">
+                  <option value="1">Mes/es</option>
+                  <option value="2">Año/s</option>
+                </select>
+              </div>
+              <div class="form__container">
+                <label class="form__label" for="taskInput">Descripción: </label>
+                <input class="form__input" id="taskInputDescrip" type="textarea" />
+                <!-- <textarea class="form__input" name="taskInputDescrip" id="taskInputDescrip" type="textarea"></textarea> -->
+                <button class="form__button" type="submit">Crear</button>
+              </div>
+            </form>
+            <section class="section section__error">
+              <div class="error-nombre"></div>
+              <div class="error-edad"></div>
+              <div class="error-descrip"></div>
+            </section>
+        </section>
+        <section class="section section-list">
+            <h2 class="listado__title">Listado Huellitas</h2>
+            <div class="tasks__title">
+              <p id="p-nombre">Nombre</p>
+              <p id="p-edad">Edad</p>
+              <p id="p-descrip">Descripción</p>
+              <p id="p-botones"></p>
+            </div>
+
+            <ul id="taskList" class="tasks">
+            </ul>
+
+        </section>
+    </main>
+    <!-- <footer class="footer">
+          <small>Copyright 2024</small>
+        </footer> -->
+
+    <footer id="footer"></footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

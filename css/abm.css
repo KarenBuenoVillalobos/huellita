@@ -1,0 +1,260 @@
+@import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
+/* nos permite traer los iconos de la lista */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.main {
+  margin: 0.5em;
+  /* backdrop-filter: blur(10px); */
+  margin: 0;
+  padding: 50px;
+  min-height: 100vh;
+  background-image: url(/img/fondo-formadopcion.webp);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main__title {
+  text-align: center;
+  margin-bottom: 0.5em;
+  color: whitesmoke;
+}
+
+.section-form {
+  padding: 45px 80px 50px;
+  border-radius: 50px 0;
+  background-color: #ffafcc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);  /* Sombra para efecto elevado */
+  width: 750px;
+  margin: 20px auto;
+}
+
+.section__title {
+  margin-bottom: 1.3em;
+  text-align: center;
+  color: palevioletred;
+}
+
+.form__container {
+  margin-top: 30px;
+}
+
+.form_task {
+  justify-content: space-between;
+  gap: 0.25em;  /* Espacio uniforme de 0.25em entre los elementos flexibles */
+}
+
+.form__label {
+  align-self: center;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: whitesmoke;
+}
+
+.form__input {
+  /* flex: 1; */
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Sombra para efecto elevado */
+  border-color: transparent;
+  width: 200px;
+}
+.form__inputedad:focus,
+.form__selectedad:focus,
+.form__input:focus {
+  border: 3px solid transparent;
+  outline: 3px rgb(245, 245, 245) solid; /*sirve para cambiar el borde al hacer click*/
+}
+
+/* textarea, */
+.form__inputedad,
+.form__selectedad {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);  /* Sombra para efecto elevado */
+  border-color: transparent;
+}
+
+.form__inputedad {
+  width: 60px;
+}
+/* 
+textarea{
+  width: 100px;
+  height: 40px;
+} */
+
+.form__button {
+  display: inline-block;
+  padding: 0.25em 1em;
+  padding: 10px 30px;
+  margin-left: 50px;
+  border-radius: 15px 0;
+  border: 3px solid palevioletred;
+  background-color: whitesmoke;
+  /* color: #ffafcc; */
+  color: palevioletred;
+  transition: 0.2s;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Sombra para efecto elevado */
+}
+
+.form__button:hover {
+  border: 3px solid palevioletred;
+  background-color: palevioletred;
+  color: whitesmoke;
+}
+
+.section__error {
+  margin-top: 10px;
+}
+
+.error-nombre,
+.error-edad,
+.error-descrip {
+  color: red;
+  margin-top: 8px;
+}
+
+.section-list {
+  padding: 60px 100px;
+  border-radius: 50px 0;
+  background-color: #eafae4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);  /* Sombra para efecto elevado */
+  width: 1200px;
+  margin: auto;
+}
+
+.listado__title {
+  margin-bottom: 1.3em;
+  text-align: center;
+  /* color: #add899; */
+  color: #9fc78d;
+}
+
+.tasks__title p{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.tasks__title,
+.tasks__item {
+  display: flex;  /*DESPUES MODIFICAR/COMENTAR ESTE PARA AGREGAR IMGS*/
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: #c2dfb5;
+}
+.tasks__title{
+  display: flex;
+  background-color: #a0cf88;
+}
+.tasks__item p {
+  font-size: 1.4em;
+  color: rgb(63, 63, 63);
+  min-width: 200px;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.bx-check {
+  color: green;
+  cursor: pointer;
+}
+
+.bx-trash {
+  color: red;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*MEDIA QUERIES ABM*/
+/*PÁGINA ABM-LISTADO*/
+
+/* @media (min-width: 768px) {
+
+} */
+
+@media (max-width: 768px) {
+  .section-form{
+    padding: 40px 60px;
+    width: auto;
+  }
+  .form__label{
+    font-size: 1.1em;
+  }
+  .form__input{
+    width: auto;
+  }
+  .section-list{
+    padding: 60px;
+    width: auto;
+  }
+  .tasks__title p{
+    /* min-width: 30px; */
+    width: auto;
+  }
+  .tasks__item p{
+    min-width: 100px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section-form{
+    padding: 40px;
+  }
+  .form__container{
+    margin-top: 25px;
+  }
+  .form__inputedad,
+  .form__selectedad,
+  .form__input{
+    max-width: 100px;
+    /* width: auto; */
+    margin: 0 5px;
+    padding: 5px;
+  }
+  .form__inputedad{
+    width: 50px;
+  }
+  .form__label{
+    font-size: 1em;
+  }
+  .form__selectedad{
+    max-width: 90px;
+  }
+  .form__button{
+    padding: 10px 25px;
+  }
+  .section-list{
+    /* min-width: 400px; */
+    padding: 40px;
+  }
+  .tasks__title p {
+    font-size: 1em;
+  }
+}
